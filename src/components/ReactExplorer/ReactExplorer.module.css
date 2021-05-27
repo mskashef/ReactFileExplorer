@@ -1,0 +1,77 @@
+.container {
+  height: 600px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  position: relative;
+  /*background-color: #4C4A4A;*/
+  background-color: var(--header-bgcolor);
+  width: 100%;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #00000055;
+}
+.title {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 30px;
+  user-select: none;
+}
+.headerButton {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  cursor: pointer;
+  border: none;
+}
+.headerButtonsContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.topRow {
+  height: 50px;
+  /*background-color: #283844;*/
+  display: flex;
+  align-items: center;
+}
+.navButtons {
+  border-radius: 5px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+.side {
+  width: 180px;
+  border-radius: 0 0 0 10px;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.main {
+  position: relative;
+  border-radius: 0 0 10px 0;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
